@@ -6,9 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent implements OnInit {
+  username="";
+  //UserName = " ";
+  constructor() {
+    
+   }
 
-  constructor() { }
-
+  //showName(event : any)
+  //{
+  //  this.UserName= event;
+  //}
   ngOnInit() {
   }
 

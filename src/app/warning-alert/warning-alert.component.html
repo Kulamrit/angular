@@ -1,3 +1,11 @@
-<p>
-  warning-alert works!
+
+<br/><br/><button class="btn btn-primary" (click)="showAllData()">
+  Display Details</button>
+
+<p *ngIf="showData">
+  IT works!
 </p>
+
+<br/><br/><button class="btn btn-primary" (click)="ToggleData()">
+  Toggle</button>
+<div *ngFor="let box of array" [ngStyle]="{backgroundColor: box >=5 ? 'blue': 'green'}" [ngClass] = "{'white-text': box >= 5}">{{box}}</div>

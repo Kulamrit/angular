@@ -1,3 +1,6 @@
-<p>
-  parent works!
-</p>
+
+  UserName <input [(ngModel)]="username">
+  <p>UserName : {{username}}</p>
+  <button class="btn btn-primary" [disabled]="username==''" (click)="username=''">
+    Reset</button>
+
